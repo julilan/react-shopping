@@ -17,9 +17,7 @@ const ProductsList = () => {
       }}
     >
       {Array.isArray(products) &&
-        products.map((product) => (
-          <Product key={product?.id} {...product} /> // ? is quite useful if the item is still undefined
-        ))}
+        products.map((product) => <Product key={product?.id} {...product} />)}
     </div>
   );
 };
