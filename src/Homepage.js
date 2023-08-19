@@ -1,9 +1,11 @@
+import Layout from './components/Layout';
+
 const Homepage = () => {
   return (
-    <div>
+    <Layout>
       <h1>Homepage</h1>
       <p>My amazing homepage</p>
-    </div>
+    </Layout>
   );
 };
 
