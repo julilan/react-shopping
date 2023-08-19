@@ -11,8 +11,8 @@ const NavBar = () => {
         <img
           src={logo}
           alt='logo'
-          width='30'
-          height='30'
+          width='25'
+          height='25'
           className='d-inline-block align-top'
         />{' '}
         Fit Vista
