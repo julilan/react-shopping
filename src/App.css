@@ -1,3 +1,5 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400&display=swap');
+
+body {
+  font-family: 'League Spartan', sans-serif;
 }
