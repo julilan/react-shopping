@@ -12,7 +12,7 @@ const Product = (props) => {
         margin: '2rem 1rem',
       }}
     >
-      <Card.Img variant='top' src={image} />
+      <Card.Img variant='top' src={image} alt={title} />
       <Card.Body>
         <Card.Text>{id}</Card.Text>
         <Card.Title>{title}</Card.Title>
