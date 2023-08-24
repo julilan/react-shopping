@@ -1,14 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
-import axios from 'axios';
-import Product from './Product';
-import Layout from './components/Layout';
-
-const api = 'https://fakestoreapi.com/products';
-
-const fetchAllProducts = async () => {
-  const res = await axios(api);
-  return res.data;
-};
+import ProductCard from '../UI/ProductCard';
+import { fetchAllProducts } from '../apis/ProductsAPI';
+import Layout from '../components/Layout';
 
 const ProductsList = () => {
   const { isLoading, isError, isSuccess, isFetching, data, error } = useQuery({
@@ -42,7 +35,7 @@ const ProductsList = () => {
         }}
       >
         {Array.isArray(data) &&
-          data.map((product) => <Product key={product?.id} {...product} />)}
+          data.map((product) => <ProductCard key={product?.id} {...product} />)}
       </div>
     </Layout>
   );

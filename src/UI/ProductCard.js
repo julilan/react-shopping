@@ -1,6 +1,6 @@
 import { Card } from 'react-bootstrap';
 
-const Product = (props) => {
+const ProductCard = (props) => {
   const { id, title, price, description, category, image, rating } = props;
 
   return (
@@ -25,4 +25,4 @@ const Product = (props) => {
   );
 };
 
-export default Product;
+export default ProductCard;
