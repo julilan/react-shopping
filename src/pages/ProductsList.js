@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import ProductCard from '../UI/ProductCard';
-import { fetchAllProducts } from '../apis/ProductsAPI';
+import { fetchAllProducts } from '../api/ProductsAPI';
 import Layout from '../components/Layout';
 
 const ProductsList = () => {
